@@ -1,0 +1,76 @@
+/* সাধারণ স্টাইলিং */
+body {
+    font-family: 'SolaimanLipi', 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+/* শুরু বাটনের স্টাইল */
+#startBtn {
+    background-color: #28a745;
+    color: white;
+}
+#startBtn:hover {
+    background-color: #218838;
+}
+
+/* বন্ধ বাটনের স্টাইল */
+#stopBtn {
+    background-color: #dc3545;
+    color: white;
+}
+#stopBtn:hover {
+    background-color: #c82333;
+}
+/* যখন বাটন ডিজেবল থাকবে */
+#stopBtn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* ভিডিও কন্টেইনারের স্টাইল */
+#videoContainer {
+    margin-top: 20px;
+    display: none; /* প্রথমে লুকানো থাকবে */
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
